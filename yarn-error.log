@@ -1,0 +1,63 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add webpack –D
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  TypeError [ERR_UNESCAPED_CHARACTERS]: https://registry.yarnpkg.com/–D: Request path contains unescaped characters
+      at new NodeError (node:internal/errors:372:5)
+      at new ClientRequest (node:_http_client:160:13)
+      at Object.request (node:https:353:10)
+      at Request.module.exports.Request.start (/usr/local/lib/node_modules/yarn/lib/cli.js:141445:32)
+      at Request.module.exports.Request.end (/usr/local/lib/node_modules/yarn/lib/cli.js:142204:10)
+      at end (/usr/local/lib/node_modules/yarn/lib/cli.js:141258:14)
+      at Immediate.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141272:7)
+      at processImmediate (node:internal/timers:466:21)
+
+npm manifest: 
+  {
+    "name": "webpack-demo",
+    "version": "1.0.0",
+    "description": "To demonstrate the working of Webpack",
+    "main": "index.js",
+    "scripts": {
+      "dev": "webpack --mode development",
+      "start": "webpack-dev-server --mode development --open",
+      "build": "webpack --mode production"
+    },
+    "author": "Max Menshenin",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.18.5",
+      "@babel/preset-env": "^7.18.2",
+      "babel-loader": "^8.2.5",
+      "css-loader": "^4.2.2",
+      "html-webpack-plugin": "^4.4.1",
+      "sass": "^1.26.10",
+      "sass-loader": "^10.0.2",
+      "style-loader": "^1.2.1",
+      "webpack": "^4.44.1",
+      "webpack-cli": "^3.3.12",
+      "webpack-dev-server": "^3.11.0"
+    },
+    "dependencies": {
+      "lodash": "^4.17.20",
+      "moment": "^2.27.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
