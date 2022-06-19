@@ -1,5 +1,5 @@
 node_modules
 buil
 dist
-.ds_store
+.DS_Store
 .idea

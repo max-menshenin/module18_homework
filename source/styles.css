@@ -11,4 +11,5 @@ ul {
 	padding-top: 35px;
 	padding-right: 300px;
 	padding-left: 30px;
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
